@@ -1,0 +1,41 @@
+git clone https://github.com/miguelgrinberg/microblog-api
+cd microblog-api
+cp .env.example .env
+
+
+python3 -m venv .venv
+
+.venv/bin/activate
+pip install Flask Flask-SQLAlchemy
+pip install flask_cors
+pip install -r requirements.txt
+pip cache purge
+
+Start-Process powershell -Verb runAs
+docker-compose run --rm microblog-api flask db upgrade
+
+docker-compose run --rm microblog-api bash -c "flask fake users 10 && flask fake posts 100"
+
+docker-compose up -d
+
+python c:\Users\joech\source\repos\quantinvests_2025\microblog-api\api\app.py
+
+
+python -c "import secrets; print(secrets.token_urlsafe(32))"
+
+
+
+
+
+cd C:\Users\joech\source\repos\quantinvests_2025\microblog-api\microblog-api\microblog-api\microblog-api\microblog-api
+
+from email_utils import current_app, render_template
+http://127.0.0.1:5000/
+from app import db
+db.create_all()
+
+OAUTH2_REDIRECT_URI=http://localhost:3000/oauth2/{provider}/callback
+
+
+OAUTH2_REDIRECT_URI=http://localhost:3000/oauth2/google/callback
+OAUTH2_REDIRECT_URI=http://localhost:3000/oauth2/github/callback

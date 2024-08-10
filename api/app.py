@@ -5,7 +5,7 @@ from flask_cors import CORS
 from flask_mail import Mail
 from apifairy import APIFairy
 from config import Config
-
+from email_utils import current_app, render_template
 db = Alchemical()
 ma = Marshmallow()
 cors = CORS()
