@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "zazmic.palm-api-user-story-to-code"
+        "zazmic.palm-api-user-story-to-code",
+        "donjayamanne.python-environment-manager"
     ]
 }

@@ -2,7 +2,7 @@ git clone https://github.com/miguelgrinberg/microblog-api
 cd microblog-api
 cp .env.example .env
 
-
+cd C:\Users\joech\source\repos\quantinvests_2025\microblog-api
 python3 -m venv .venv
 
 .venv/bin/activate
@@ -10,6 +10,13 @@ pip install Flask Flask-SQLAlchemy
 pip install flask_cors
 pip install -r requirements.txt
 pip cache purge
+pip install tox
+tox
+tox -e py312
+
+
+ python -I -m pip install -r requirements-dev.txt
+
 
 Start-Process powershell -Verb runAs
 docker-compose run --rm microblog-api flask db upgrade
@@ -25,9 +32,10 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 
 
 
+Get-ChildItem -Path "HKCU:\Software\Python\PythonCore" -Recurse
+Get-ChildItem -Path "HKLM:\Software\Python\PythonCore" -Recurse
 
-
-cd C:\Users\joech\source\repos\quantinvests_2025\microblog-api\microblog-api\microblog-api\microblog-api\microblog-api
+cd C:\Users\joech\source\repos\quantinvests_2025\microblog-api
 
 from email_utils import current_app, render_template
 http://127.0.0.1:5000/
