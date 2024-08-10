@@ -18,4 +18,4 @@ RUN chmod +x boot.sh
 
 EXPOSE 5000
 
-CMD ["./boot.sh"]
+CMD ["./boot.sh"]print()print()print()print()

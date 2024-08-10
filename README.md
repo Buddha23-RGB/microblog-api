@@ -17,7 +17,7 @@ account.
 
 Follow these steps if you want to run this application on your computer, either
 in a Docker container or as a standalone Python application.
-
+cd C:\Users\joech\source\repos\quantinvests_2025\microblog-api\
 ```bash
 git clone https://github.com/miguelgrinberg/microblog-api
 cd microblog-api
@@ -55,7 +55,7 @@ docker-compose down
 Set up a Python 3 virtualenv and install the dependencies on it:
 
 ```bash
-python3 -m venv venv
+python3 -m .env venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
